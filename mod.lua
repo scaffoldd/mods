@@ -1,20 +1,5 @@
 MODS = {
-    [2821871340] = true; --  epic
-    [2922611430] = true; -- epic
-    [2891431356] = true; --  epic
-    [2284579394] = true; -- epic
-    [2871281714] = true; --  epic
-    [207865831] = true; -- epic
-    [208082598] = true; --  epic
-    [207878887] = true; -- epic
-    [208036088] = true; --  epic
-    [207878465] = true; -- epic
-    [208121130] = true; --  epic
-    [207979095] = true; -- epic
-    [208052033] = true; --  epic
-    [208050706] = true; -- epic
-    [208283082] = true; --  epic
-    [207774893] = true; -- epic
+    [2854704518] = true; --  aehstl
 }
 
 ADMIN = {
