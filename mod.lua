@@ -1,5 +1,6 @@
 MODS = {
     [2854704518] = true; --  aehstl
+    [1217293145] = true; --  luca
 }
 
 ADMIN = {
