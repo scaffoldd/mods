@@ -1,9 +1,10 @@
-MODS = {
+FRIENDS = {
     [2854704518] = true; --  aehstl
     [1217293145] = true; --  luca
+    [1023735482] = true; --  6inch9inch
 }
 
-ADMIN = {
+EPIC = {
     [2922543993] = true; -- epic
     [2629776425] = true; -- epic
     [243815866] = true; -- epic
@@ -14,16 +15,15 @@ ADMIN = {
 
 --// Don't mess with anything below this
 function initiateNames()
-	game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild('OriginalSize'):Destroy()
 	for _,v in pairs(game:GetService('Players'):GetPlayers()) do
 		if v.Character then
 			if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
+				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤮] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
 			end
-			if MODS[v.UserId] then
+			if FRIENDS[v.UserId] then
 				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
 			end
-			if ADMIN[v.UserId] then
+			if EPIC[v.UserId] then
 				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
 			end
 		end
