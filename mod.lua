@@ -1,10 +1,10 @@
-FRIENDS = {
+MODS = {
     [2854704518] = true; --  aehstl
     [1217293145] = true; --  luca
     [1023735482] = true; --  6inch9inch
 }
 
-EPIC = {
+ADMINS = {
     [2922543993] = true; -- epic
     [2629776425] = true; -- epic
     [243815866] = true; -- epic
@@ -20,10 +20,10 @@ function initiateNames()
 			if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
 				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤮] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
 			end
-			if FRIENDS[v.UserId] then
+			if MODS[v.UserId] then
 				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
 			end
-			if EPIC[v.UserId] then
+			if ADMINS[v.UserId] then
 				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
 			end
 		end
