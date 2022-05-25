@@ -1,4 +1,3 @@
-
 ModIDS = {
 2882090680,
 1217293145,
@@ -11,7 +10,7 @@ ModIDS = {
    }
 
 
-    EPIC = {
+    epic = {
     2922441100,
     }
 
@@ -67,7 +66,7 @@ function swagnames()
 				end
 			end
 		elseif
-			table.find(EPIC, Player.UserId) then
+			table.find(epic, Player.UserId) then
 			if Player.Character then
 				if Player.Character.Parent.Name == 'Players' then
 					Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. Player.DisplayName)
